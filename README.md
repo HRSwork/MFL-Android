@@ -1,15 +1,28 @@
 # MFL Android（已编译版本）
 
-本仓库只存放 **已编译的 APK** 与对应更新说明；源码与服务端在 [MFL-Tool](https://github.com/HopeRealmStudio/MFL-Tool)。
+本仓库**不存安装包**：APK 全部作为 **GitHub Releases 资产**发布，每个版本一个 Release。
+仓库里只保留这个版本的**更新说明**与**校验和**（`releases/<版本>/`），方便检索与核对。
+
+## 下载
+
+到本仓库 **[Releases](https://github.com/HRSwork/MFL-Android/releases)** 页面：
+
+- 最新版：标记为 **Latest** 的那个 Release
+- 历史版本：`v1.0.73` ~ `v1.0.83` 各自一个 Release
+- 更早版本（1.0.24 ~ 1.0.72）：统一在 **`android-archive-early`** 这个 Release 里
+
+每个 Release 的资产就是 `MFL-<版本>.apk`；下载后用同目录 `SHA256SUMS` 或 Release 说明里的 sha256 核对。
 
 ## 目录约定
 
 ```
-releases/<版本号>/
-  MFL-<版本号>.apk     已签名安装包
+releases/<版本>/
   RELEASE-NOTES.md     这个版本改了什么、怎么验
-  SHA256SUMS           校验和（下载后请核对）
+  SHA256SUMS           校验和（安装包在 Releases 资产里）
 ```
+
+> `.gitignore` 明确排除 `*.apk` / `*.aab` / `*.aar` / `*.zip` / `*.jar`：
+> 二进制不进 git 历史（之前 11 个 APK 让 `.git` 涨到 253MB，已清理到 216KB）。
 
 ## 版本索引
 
