@@ -1,0 +1,7 @@
+# 二进制安装包不进 git —— 它们属于 GitHub Releases（每个版本一个 Release + 资产）。
+# 仓库里只保留说明与校验和：releases/<版本>/RELEASE-NOTES.md + SHA256SUMS。
+*.apk
+*.aab
+*.aar
+*.zip
+*.jar
